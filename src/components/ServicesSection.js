@@ -6,7 +6,7 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 //Styles
-import {About, Description, Image, hide} from '../styles'
+import {About, Description, Image} from '../styles'
 import styled from  'styled-components';
 
 const ServicesSection = () => {
@@ -25,14 +25,14 @@ const ServicesSection = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
-            <div className="icon1">
+            <div className="icon">
               <img alt="icon" src={teamwork} />
               <h3>Teamwork</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
-            <div className="icon2">
+            <div className="icon">
               <img alt="icon" src={diaphragm} />
               <h3>Diaphragm</h3>
             </div>
