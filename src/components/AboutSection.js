@@ -1,35 +1,69 @@
 import React from 'react';
 import home1 from '../img/home1.png';
+import styled from 'styled-components';
+import {About, Description, Image, Hide} from '../styles'
 
 const AboutSection = () => {
   return (
-    <div>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
-            <h2>We Make Documaries</h2>
-          </div>
-          <div className="hide">
+          <Hide>
+            <h2>We Make Documentaries, </h2>
+          </Hide>
+          <Hide>
             <h2>
-              Where <span>Reality</span> Becomes Fairytale
+              Where <span>Fairytale</span> Becomes
             </h2>
-          </div>
-          <div className="hide">
-            <h2>Ture.</h2>
-          </div>
+          </Hide>
+          <Hide>
+            <h2>Reality.</h2>
+          </Hide>
         </div>
         <p>
-          Contact us about our videography, also let us know your idea, what
-          story you want us to do next
+          Contact us about our videography, also let us know, what story you
+          want us to cover next.
         </p>
         <button>Contact Us</button>
-      </div>
+      </Description>
 
-      <div className="image">
+      <Image>
         <img src={home1} alt="man in white shirt holding camera" />
-      </div>
-    </div>
+      </Image>
+    </About>
   );
 };
+
+// //Styled Component
+// const About = styled.div`
+//   min-height: 90vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 5rem 10rem;
+//   color: white;
+// `;
+
+// const Description = styled.div`
+//   flex: 1;
+//   padding-right: 5rem;
+//   h2 {
+//     font-weight: lighter;
+//   }
+// `;
+
+// const Image = styled.div`
+//   flex: 1;
+//   overflow: hidden;
+//   img {
+//     width: 100%;
+//     height: 80vh;
+//     object-fit: cover;
+//   }
+// `;
+
+// const Hide = styled.div`
+//   overflow: hidden;
+// `;
 
 export default AboutSection;

@@ -1,8 +1,11 @@
 import React from 'react';
+import styled from  'styled-components';
+import {About} from '../styles';
+
 
 const FaqSection = () => {
   return (
-    <div className="faq">
+    <Faq>
       <h2>Ask here</h2>
       <div className="question">
         <h4>How do i start?</h4>
@@ -34,8 +37,11 @@ const FaqSection = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Faq>
   );
 };
+
+const Faq = styled(About)``
+
 
 export default FaqSection;
