@@ -8,7 +8,7 @@ const FaqSection = () => {
       <h2>
         Ask Us <span>FAQ</span>
       </h2>
-      <div classname="question">
+      <div className="question">
         <h4>How Do I Contact?</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
@@ -19,7 +19,7 @@ const FaqSection = () => {
         </div>
         <div className="faq-line"></div>
       </div>
-      <div classname="question">
+      <div className="question">
         <h4>Payment Methods.</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
@@ -30,7 +30,7 @@ const FaqSection = () => {
         </div>
         <div className="faq-line"></div>
       </div>
-      <div classname="question">
+      <div className="question">
         <h4>How Do You Ship?</h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>

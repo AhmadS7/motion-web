@@ -1,26 +1,25 @@
 import React from 'react';
 import home1 from '../img/home1.png';
-//Styled
-import styled from 'styled-components';
-import {About, Description, Image, Hide} from '../styles'
-
+import { About, Description, Image, Hide } from '../styles';
+//Framer Motion
+import { motion } from 'framer-motion';
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>We Make Documentaries, </h2>
+            <motion.h2>We Make Documentaries</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               Where <span>Fairytale</span> Becomes
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>Reality.</h2>
+            <motion.h2>Reality.</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Contact us about our videography, also let us know, what story you
           want us to cover next.
