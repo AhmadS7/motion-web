@@ -12,4 +12,12 @@ export const pageAnimation = {
       duration: 1,
     },
   },
+  exit: {
+    opacity: 0,
+    x: -300,
+    y: -300,
+    transition: {
+      duration: 1,
+    },
+  },
 };

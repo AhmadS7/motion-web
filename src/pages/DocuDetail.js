@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import { DocuState } from '../docuState';
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const DocuDetail = () => {
   const history = useHistory();
@@ -18,7 +21,12 @@ const DocuDetail = () => {
   return (
     <React.Fragment>
       {docu && (
-        <Details>
+        <Details
+          exit="exit"
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+        >
           <HeadLine>
             <h2>{docu.title}</h2>
             <img src={docu.mainImg} alt="docu" />
@@ -41,7 +49,7 @@ const DocuDetail = () => {
   );
 };
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: white;
 `;
 const HeadLine = styled.div`
