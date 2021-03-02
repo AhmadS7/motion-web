@@ -24,7 +24,7 @@ export const pageAnimation = {
 export const fade = {
   hidden: {
     opacity: 1,
-    transition: { ease: 'easeOut', duration: 0.35 },
+    transition: { ease: 'easeOut', duration: 0.75 },
   },
 };
 
@@ -32,7 +32,7 @@ export const titleAnim = {
   hidden: { y: 200 },
   show: {
     y: 0,
-    transition: { duration: 0.35, ease: 'easeOut' },
+    transition: { duration: 0.75, ease: 'easeOut' },
   },
 };
 
@@ -46,7 +46,7 @@ export const photoAnim = {
     opacity: 1,
     transition: {
       ease: 'easeOut',
-      duration: 0.35,
+      duration: 0.75,
     },
   },
 };
