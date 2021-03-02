@@ -3,32 +3,38 @@ import home1 from '../img/home1.png';
 import { About, Description, Image, Hide } from '../styles';
 //Framer Motion
 import { motion } from 'framer-motion';
+import { titleAnim, fade, photoAnim } from '../animation';
+
 const AboutSection = () => {
   return (
     <About>
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2>We Make Documentaries</motion.h2>
+            <motion.h2 variants={titleAnim}>We Make Documentaries</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnim}>
               Where <span>Fairytale</span> Becomes
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>Reality.</motion.h2>
+            <motion.h2 variants={titleAnim}>Reality.</motion.h2>
           </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Contact us about our videography, also let us know, what story you
           want us to cover next.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
 
       <Image>
-        <img src={home1} alt="man in white shirt holding camera" />
+        <motion.img
+          variants={photoAnim}
+          src={home1}
+          alt="man in white shirt holding camera"
+        />
       </Image>
     </About>
   );

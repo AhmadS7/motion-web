@@ -19,10 +19,10 @@ const OurWork = () => {
       style={{ background: ' #1c141d' }}
     >
       <Docu>
-        <h2>The Athlete</h2>
-        <div className="line"></div>
+        <motion.h2>The Athlete</motion.h2>
+        <motion.div className="line"></motion.div>
         <Link to="/work/the-athlete">
-          <img src={athlete} alt="athlete" />
+          <motion.img src={athlete} alt="athlete" />
         </Link>
       </Docu>
       <Docu>
